@@ -169,8 +169,8 @@
           <div
             v-if="!$scopedSlots['autocomplete-item']"
             @click="performAddTags(item, undefined, 'autocomplete')"
+            v-html="item.text"
           >
-            {{ item.text }}
           </div>
           <slot
             v-else
